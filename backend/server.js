@@ -7,7 +7,7 @@ const app=express();
 dotenv.config();
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://captcha-n5hz.onrender.com",
     credentials: true
   }));
 // app.use(cors());
@@ -15,7 +15,7 @@ app.use(cors({
     secret: "yourSecret",
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // true when using https
+    cookie: { secure: true } 
   }));
 
 
