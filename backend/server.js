@@ -15,7 +15,10 @@ app.use(cors({
     secret: "yourSecret",
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true } 
+    cookie: { secure: true ,
+        sameSite: 'None' 
+    } 
+
   }));
 
 
