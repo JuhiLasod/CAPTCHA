@@ -37,7 +37,7 @@ function Home() {
 
   const generateImgCaptcha = async () => {
     setUserImgCaptcha("");
-    const res = await fetch("https://captcha-backend-oxmc.onrender.com/api/captcha", {
+    const res = await fetch("https://captcha-backend-eir4.onrender.com/api/captcha", {
       method: "GET",
       credentials: "include"
     });
@@ -46,7 +46,7 @@ function Home() {
   };
 
   const verifyImgCaptcha = async () => {
-    const res = await fetch("https://captcha-backend-oxmc.onrender.com/api/verify-captcha", {
+    const res = await fetch("https://captcha-backend-eir4.onrender.com/api/verify-captcha", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
